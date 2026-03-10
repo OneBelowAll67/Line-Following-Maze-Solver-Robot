@@ -12,6 +12,6 @@ Additionally, it also helps to reduce oscillations of the robot when moving.
 Main algorithm to map out the entire maze. When mapping, it will try to map out all the possible different routes and determine the shortest path.
 It then stores the travelled path in a Volatile Memory System in a form of a bunch of single characters. For example: "LSR" where L for Left Turn, S for Straight and R for Right Turn.
 # DFS and Static Path Persistence
-The main maze solving algorithm. WIP
+The main maze solving algorithm, a combination of DFS (Depth First Search) and Static Path Persistence ensures the robot is able to solve the maze quickly and efficiently. By using the previous algorithm Hand-On-Wall Rule, it will initially map out all the possible roots in the first run. When initializing the second run, the robot will avoid previously traversed paths to prevent infinite loops or duplicate memory.
 # Mechanical Design
 WIP
