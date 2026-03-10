@@ -1,4 +1,4 @@
-# Line-Following-Maze-Solver-Robot
+# Line Following Maze Solver Robot with Arduino
 Part of Maze Competition Season 3 hosted by University of Nottingham's IEEE Student Chapter
 
 This repository contains code that was used to solve a Line Following Maze. It contains a few different algorithms to solve the maze
