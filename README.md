@@ -5,6 +5,11 @@ This repository contains code that was used to solve a Line Following Maze. It c
 It contains: PD Control, Hand-On-Wall Rule, DFS and Static Path Persistence.
 Additionally, this README doc will roughly go through each method and some details on its mechanical design. For full details feel free to access the code itself to understand!
 
+Something to note that the following libraries are needed to fully run the code. It is as below:
+1. EEPROM.h - able to write EEPROM values in the Arduino. (used for storing the mapped out mazed)
+2. LiquidCrystal.h - able to use the functions of the LCD Keypad Shield to access the EEPROM memory and display text.
+3. Arduino.h (optional) - it is only needed if you run the code in .cpp as it is a library for C++ to read and run Arduino.
+
 # PD Control
 A combination of Proportional and Derivative Control feedback control algortihm. It corrects real-time errors to ensure that the robot car is aligned with the center.
 Additionally, it also helps to reduce oscillations of the robot when moving.
@@ -15,3 +20,4 @@ It then stores the travelled path in a Volatile Memory System in a form of a bun
 The main maze solving algorithm, a combination of DFS (Depth First Search) and Static Path Persistence ensures the robot is able to solve the maze quickly and efficiently. By using the previous algorithm Hand-On-Wall Rule, it will initially map out all the possible roots in the first run. When initializing the second run, the robot will avoid previously traversed paths to prevent infinite loops or duplicate memory.
 # Mechanical Design
 WIP
+
