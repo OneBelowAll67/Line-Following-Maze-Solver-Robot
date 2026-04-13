@@ -10,6 +10,8 @@ Something to note that the following libraries are needed to fully run the code.
 2. LiquidCrystal.h - able to use the functions of the LCD Keypad Shield to access the EEPROM memory and display text.
 3. Arduino.h (optional) - it is only needed if you run the code in .cpp as it is a library for C++ to read and run Arduino.
 
+Do feel free to refer to the powerpoint presentation attached alongside in the repository for detailed explaination!
+
 # PD Control
 A combination of Proportional and Derivative Control feedback control algortihm. It corrects real-time errors to ensure that the robot car is aligned with the center.
 Additionally, it also helps to reduce oscillations of the robot when moving.
